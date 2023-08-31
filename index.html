@@ -1,0 +1,115 @@
+
+<style>
+    body{
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        flex-direction: row;
+
+    }
+    #form{
+        width: 300px;
+        margin: calc(50vh - 150px) auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+    }
+    #form input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #form button{
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        background-color: #2ecc71;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #form button:hover{
+        background-color: #27ae60;
+    }
+    div#id{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #eee8e893;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        gap: 10px;
+
+    }
+    table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+    }
+    thead{
+        width: 100%;
+        background-color: #6fc69392;
+        color: #1b1919;
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    table tr td{
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    table tr td:first-child{
+        width: 100px;
+    }
+    #clear{
+        padding: 10px;
+        border: 0;
+        background-color: #2ecc71;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+
+<div id="id">
+    <button id="clear">clear</button>
+    <table>
+        <thead>
+            <tr>
+                <td>name</td>
+                <td>age</td>
+            </tr>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<form id="form">
+    <input type="text" id="name" name="name" placeholder="name">
+    <input type="text" id="age" name="age" placeholder="age">
+    <button type="submit">submit</button>
+</form>
+
+
+
+
+<script src="jquery.js"></script>
+<script src="script.js"></script>
